@@ -598,7 +598,7 @@ body {
 
 /* enjoy-free-time-image section */
 .enjoy-free-time {
-    min-height: 100vh;
+    min-height: 60vh;
     background-image: url(./images/imageedit_2_7637016948.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -619,6 +619,17 @@ body {
 }
 
 .enjoy-free-time-gradient {
+    min-height: 60vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.enjoy-free-time-gradient2 {
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -631,9 +642,10 @@ body {
 
 
 
+
 /* who we are section */
 .Services {
-    min-height: 100vh;
+    min-height: 80vh;
     color: black;
     display: flex;
     flex-direction: column;
@@ -652,12 +664,38 @@ body {
 }
 
 .card-css {
+    border-right: #192027 solid;
+    border-bottom: #192027 solid;
 
-    height: 300px;
+    height: 200px;
+}
+
+
+.card-css2 {
+    border-right: none;
+    border-bottom: #192027 solid;
+
+    height: 200px;
+}
+
+.card-css3 {
+    border-right: none;
+    border-bottom: none;
+
+    height: 200px;
+}
+
+.card-css4 {
+
+    border-bottom: none;
+
+    height: 200px;
 }
 
 .card-css:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgba(0, 132, 255, 0.451);
+    ;
 }
 
 @media screen and (max-width: 960px) {
@@ -677,6 +715,17 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+}
+
+.img-circle {
+
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+
+
+
 
 }
 
