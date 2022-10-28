@@ -1,9 +1,14 @@
 
-
+// Home-page section
+const homeSection = document.querySelector('.home-page');
 // NAVBAR VARIABLES
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.sidenav');
 const dropdwonactive = document.querySelector('main');
+const BookNowButton = document.getElementById('bookNowBtn');
+const bookNowLink = document.getElementById('BookNowButtonNavbar');
+// Hero Section Variables
+const wrapper = document.querySelector('.wrapper');
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -11,7 +16,7 @@ const mobileMenu = () => {
     menuLinks.classList.toggle('active');
 
     if (menuLinks.className === 'sidenav active') {
-        dropdwonactive.style.marginLeft = '160px';
+        // dropdwonactive.style.marginLeft = '160px';
 
         dropdwonactive.style.transition = ' all 0.5s ease-out';
 
@@ -23,6 +28,26 @@ const mobileMenu = () => {
 };
 
 menu.addEventListener('click', mobileMenu);
+
+// Book Now Button
+const bookNowEvent = () => {
+    wrapper.classList.toggle('active');
+
+}
+const HomePage = () => {
+    wrapper.className = 'wrapper';
+
+}
+
+BookNowButton.addEventListener('mouseover', bookNowEvent);
+BookNowButton.addEventListener('mouseleave', HomePage)
+bookNowLink.addEventListener('mouseover', bookNowEvent);
+
+bookNowLink.addEventListener('mouseleave', HomePage)
+// home page event listener
+
+
+
 
 // FORM VARIABLES
 var form_1 = document.querySelector(".form_1");
