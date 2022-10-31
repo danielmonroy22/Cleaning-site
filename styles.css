@@ -728,8 +728,17 @@ body {
 .card-css {
     border-right: #192027 solid;
     border-bottom: #192027 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
     height: 200px;
+}
+
+.card-css h4 {
+    font-size: 1rem;
 }
 
 
