@@ -97,9 +97,10 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
 
-    width: 13rem;
+
+    width: 12rem;
+    margin-left: 25px;
 }
 
 
@@ -164,6 +165,7 @@ body {
 .Phone_number {
     text-decoration: none;
     color: white;
+    margin-left: 40px;
 }
 
 
