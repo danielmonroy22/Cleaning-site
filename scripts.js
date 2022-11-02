@@ -71,18 +71,52 @@ var form_2_progessbar = document.querySelector(".form_2_progessbar");
 var btn_done = document.querySelector(".btn_done");
 var modal_wrapper = document.querySelector(".modal_wrapper");
 var shadow = document.querySelector(".shadow");
+// input variables
+
+
+var firstName = document.getElementById('firstName');
+var lastName = document.getElementById('lastName');
+var emailAdress = document.getElementById('email');
+var phoneNumber = document.getElementById('phoneNumber');
+var postalCode = document.getElementById('postalCode');
+var serviceType = document.getElementById('serviceType');
+var bedrooms = document.getElementById('bedrooms');
+var bathrooms = document.getElementById('bathrooms');
+var halfBathrooms = document.getElementById('halfBathrooms');
+var squareFootage = document.getElementById('squareFootage');
+
+var firstNameInput;
+var lastNameInput;
+var emailInput;
+var phoneInput;
+var postalInput;
+var serviceTypeInput;
+var bedroomsInput;
+var bathroomsInput;
+var halfBathroomsInput;
+var squareFootageInput;
 
 
 // FORM EVENT LISTENERS
 
 form_1_next_btn.addEventListener("click", function () {
-    form_1.style.display = "none";
-    form_2.style.display = "block";
+    if (firstName.vale === '' || lastName.value === '' || emailAdress.value === '') {
+        alert("You must complete all the input fields");
+    }
+    else {
+        form_1.style.display = "none";
+        form_2.style.display = "block";
 
-    form_1_btns.style.display = "none";
-    form_2_btns.style.display = "flex";
+        form_1_btns.style.display = "none";
+        form_2_btns.style.display = "flex";
 
-    form_2_progessbar.classList.add("active");
+        form_2_progessbar.classList.add("active");
+
+    }
+
+
+
+
 });
 
 form_2_back_btn.addEventListener("click", function () {
@@ -96,6 +130,9 @@ form_2_back_btn.addEventListener("click", function () {
 });
 
 btn_done.addEventListener("click", function () {
+    postalInput = postalCode.value;
+    serviceTypeInput = serviceType.value;
+
 
     modal_wrapper.classList.add("active");
 })

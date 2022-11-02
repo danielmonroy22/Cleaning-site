@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <main>
         <section class="home-page">
             <div class="sidenav">
@@ -33,6 +34,7 @@
 
 
             <!-- Navbar Section -->
+
             <section class="hero-section">
                 <nav class="navbar">
                     <div class="navbar_container">
@@ -52,7 +54,8 @@
                                     <a href="#services" class="navbar__links">Services</a>
                                 </li>
                                 <li class="navbar__item ">
-                                    <a href="#howitWorksId" class="navbar__links" id="Howitworkslink">How It Works</a>
+                                    <a href="#howitWorksId" class="navbar__links" id="Howitworkslink">How It
+                                        Works</a>
                                 </li>
                                 <li class="navbar__item">
                                     <a href="#" class="navbar__links">Help</a>
@@ -65,7 +68,8 @@
                         </div>
                         <div class="right-side-nav">
 
-                            <a href="#" class="Phone_number"><i class="fa-solid fa-phone"></i> &ensp;(123) 456-7891</a>
+                            <a href="#" class="Phone_number"><i class="fa-solid fa-phone"></i> &ensp;(123)
+                                456-7891</a>
 
 
                             <button type="button" class="btn btn-primary boton" id="bookNowBtn">Book Now</button>
@@ -80,64 +84,70 @@
                 <!-- Hero section -->
 
                 <!-- Form -->
-                <div class="wrapper">
-                    <div class="header">
-                        <ul>
-                            <li class="active form_1_progessbar">
-                                <div>
-                                    <p>1</p>
-                                </div>
-                            </li>
-                            <li class="form_2_progessbar">
-                                <div>
-                                    <p>2</p>
-                                </div>
-                            </li>
+                <form action="https://formsubmit.co/danieldeveloperco@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New customer interested in a cleaning Service !!!">
+                    <div class="wrapper">
+                        <div class="header">
+                            <ul>
+                                <li class="active form_1_progessbar">
+                                    <div>
+                                        <p>1</p>
+                                    </div>
+                                </li>
+                                <li class="form_2_progessbar">
+                                    <div>
+                                        <p>2</p>
+                                    </div>
+                                </li>
 
-                        </ul>
-                    </div>
-                    <div class="form_wrap">
-                        <div class="form_1 data_info">
-                            <h2>Get A Quote!</h2>
-                            <form>
+                            </ul>
+                        </div>
+                        <div class="form_wrap">
+                            <div class="form_1 data_info">
+                                <h2>Get A Quote!</h2>
+
+
                                 <div class="form_container">
                                     <div class="input_wrap">
-                                        <label for="name">First Name</label>
-                                        <input type="text" name="First Name" class="input" id="email">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="First Name" class="input" id="firstName" required>
                                     </div>
                                     <div class="input_wrap">
-                                        <label for="name">Last Name</label>
-                                        <input type="text" name="Last Name" class="input" id="password">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="LastName" class="input" id="lastName" required>
                                     </div>
                                     <div class="input_wrap">
                                         <label for="email">Email Address</label>
-                                        <input type="text" name="Email" class="input" id="confirm_password">
+                                        <input type="text" name="Email" class="input" id="email" required>
                                     </div>
                                     <div class="input_wrap">
-                                        <label for="Phone">Phone Number(Optional)</label>
-                                        <input type="number" name="Phone Number" class="input" id="confirm_password">
+                                        <label for="phoneNumber">Phone Number(Optional)</label>
+                                        <input type="number" name="Phone Number" class="input" id="phoneNumber">
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="form_2 data_info" style="display: none;">
-                            <h2>Get A Quote!</h2>
-                            <form>
+
+
+                            </div>
+                            <div class="form_2 data_info" style="display: none;">
+                                <h2>Get A Quote!</h2>
+
                                 <div class="form_container">
                                     <div class="input_wrap">
                                         <label for="Postal">Postal Code</label>
-                                        <input type="text" name="Postal Code" class="input" id="user_name">
+                                        <input type="text" name="Postal Code" class="input" id="postalCode" required>
                                     </div>
                                     <div class="container">
                                         <div class="row m-auto">
                                             <div class="col-6 w-50 ">
                                                 <div class="input-group m-auto bg-black w-100 h-50 rounded">
-                                                    <select class="custom-select bg-primary w-100 p-3 rounded "
-                                                        id="inputGroupSelect02" style="color: white;">
+                                                    <select class="custom-select bg-primary w-100 p-3 rounded"
+                                                        id="serviceType" style="color: white;" name="ServiceType"
+                                                        required>
                                                         <option selected>- Service Type -</option>
-                                                        <option value="1">Deep Clean</option>
-                                                        <option value="2">Move In/Out Clean</option>
-                                                        <option value="3">Maintenance Clean</option>
+                                                        <option value="Deep clean">Deep Clean</option>
+                                                        <option value="Move In/Out Clean">Move In/Out Clean</option>
+                                                        <option value="Maintenance Clean">Maintenance Clean</option>
                                                     </select>
 
                                                 </div>
@@ -146,12 +156,12 @@
                                             <div class="col-6 w-50">
                                                 <div class="input-group m-auto bg-black w-100 h-50 rounded">
                                                     <select class="custom-select bg-primary w-100 p-3 rounded"
-                                                        id="inputGroupSelect02" style="color: white;">
+                                                        id="bedrooms" style="color: white;" name="Bedrooms" required>
                                                         <option selected>- Bedrooms -</option>
-                                                        <option value="1">1 Bedroom</option>
-                                                        <option value="2">2 Bedrooms</option>
-                                                        <option value="3">3 Bedrooms</option>
-                                                        <option value="4">4 Bedrooms</option>
+                                                        <option value="1 Bedroom">1 Bedroom</option>
+                                                        <option value="2 Bedroom">2 Bedrooms</option>
+                                                        <option value="3 Bedroom">3 Bedrooms</option>
+                                                        <option value="4 Bedroom">4 Bedrooms</option>
                                                     </select>
 
                                                 </div>
@@ -164,12 +174,12 @@
                                             <div class="col-6 w-50">
                                                 <div class="input-group m-auto bg-black w-100 h-50 rounded">
                                                     <select class="custom-select bg-primary w-100 p-3 rounded"
-                                                        id="inputGroupSelect02" style="color: white;">
+                                                        id="bathrooms" style="color: white;" name="bathrooms" required>
                                                         <option selected>- Bathrooms -</option>
-                                                        <option value="1">1 Bathroom</option>
-                                                        <option value="2">2 Bathrooms</option>
-                                                        <option value="3">3 Bathrooms</option>
-                                                        <option value="4">4 Bathrooms</option>
+                                                        <option value="1 bathroom">1 Bathroom</option>
+                                                        <option value="2 bathrooms">2 Bathrooms</option>
+                                                        <option value="3 bathrooms">3 Bathrooms</option>
+                                                        <option value="4 bathrooms">4 Bathrooms</option>
                                                     </select>
 
                                                 </div>
@@ -178,14 +188,14 @@
                                             <div class="col-6 w-50">
                                                 <div class="input-group m-auto bg-black w-100 h-50 rounded">
                                                     <select class="custom-select bg-primary w-100 p-3 rounded"
-                                                        id="inputGroupSelect02" style="color: white;">
+                                                        id="halfBathrooms" style="color: white;" name="halfBathrooms">
                                                         <option selected>- Half Bathrooms -</option>
-                                                        <option value="1">0 Half Bathrooms</option>
+                                                        <option value="0 Half Bathrooms">0 Half Bathrooms</option>
 
-                                                        <option value="1">1 Half Bathroom</option>
-                                                        <option value="2">2 Half Bathrooms</option>
-                                                        <option value="3">3 Half Bathrooms</option>
-                                                        <option value="4">4 Half Bathrooms</option>
+                                                        <option value="1 0 Half Bathroom">1 Half Bathroom</option>
+                                                        <option value="2 Half Bathrooms">2 Half Bathrooms</option>
+                                                        <option value="3 Half Bathrooms">3 Half Bathrooms</option>
+                                                        <option value="4 Half Bathrooms">4 Half Bathrooms</option>
                                                     </select>
 
                                                 </div>
@@ -201,15 +211,16 @@
                                             <div class="col-12 w-100">
                                                 <div class="input-group m-auto bg-black w-100 h-50 rounded">
                                                     <select class="custom-select bg-primary w-100 p-3 rounded"
-                                                        id="inputGroupSelect02" style="color: white;">
+                                                        id="squareFootage" style="color: white;" name="Square Footage"
+                                                        required>
                                                         <option selected>- Square Footage -</option>
-                                                        <option value="1">1 - 999 Sq Ft</option>
-                                                        <option value="2">1000 - 1499 Sq Ft</option>
-                                                        <option value="3">1500 - 1999 Sq Ft</option>
-                                                        <option value="3">2000 - 2499 Sq Ft</option>
-                                                        <option value="3">2500 - 2999 Sq Ft</option>
-                                                        <option value="3">3000 - 3499 Sq Ft</option>
-                                                        <option value="3">3500 - 3999 Sq Ft</option>
+                                                        <option value="1 - 999 Sq Ft">1 - 999 Sq Ft</option>
+                                                        <option value="1000 - 1499 Sq Ft">1000 - 1499 Sq Ft</option>
+                                                        <option value="1500 - 1999 Sq Ft">1500 - 1999 Sq Ft</option>
+                                                        <option value="2000 - 2499 Sq Ft">2000 - 2499 Sq Ft</option>
+                                                        <option value="2500 - 2999 Sq Ft">2500 - 2999 Sq Ft</option>
+                                                        <option value="3000 - 3499 Sq Ft">3000 - 3499 Sq Ft</option>
+                                                        <option value="3500 - 3999 Sq Ft">3500 - 3999 Sq Ft</option>
 
 
                                                     </select>
@@ -224,25 +235,27 @@
 
 
                                 </div>
-                            </form>
+
+                            </div>
+
+                        </div>
+                        <div class="btns_wrap">
+                            <div class="common_btns form_1_btns">
+                                <button type="submit" class="btn_next">Next <span class="icon">
+                                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                                    </span></button>
+                            </div>
+                            <div class="common_btns form_2_btns" style="display: none;">
+                                <button type="button" class="btn_back"><span class="icon">
+                                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                                    </span>Back</button>
+                                <button type="submit" value="send" class="btn_done">Done</button>
+                            </div>
+
                         </div>
 
                     </div>
-                    <div class="btns_wrap">
-                        <div class="common_btns form_1_btns">
-                            <button type="button" class="btn_next">Next <span class="icon">
-                                    <ion-icon name="arrow-forward-sharp"></ion-icon>
-                                </span></button>
-                        </div>
-                        <div class="common_btns form_2_btns" style="display: none;">
-                            <button type="button" class="btn_back"><span class="icon">
-                                    <ion-icon name="arrow-back-sharp"></ion-icon>
-                                </span>Back</button>
-                            <button type="button" class="btn_done">Done</button>
-                        </div>
-
-                    </div>
-                </div>
+                </form>
 
                 <div class="modal_wrapper">
                     <div class="shadow"></div>
