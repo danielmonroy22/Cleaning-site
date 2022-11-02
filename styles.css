@@ -173,181 +173,7 @@ body {
 
 
 /* end of navbar */
-/* media screen for navbar */
-@media screen and (max-width: 960px) {
 
-
-    .navbar_container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-
-
-    .navbar__toggle .bar {
-        width: 35px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background-color: #0d6efd;
-    }
-
-
-    .Navbar_menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000%;
-
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: -1;
-
-    }
-
-    .left-side-nav {
-
-        width: 400px;
-
-
-
-
-
-    }
-
-    .Navbar_logo {
-        width: fit-content;
-    }
-
-
-
-
-    .navbar__links {
-        text-align: center;
-
-
-
-
-        width: 90%;
-        display: table;
-    }
-
-
-    .Navbar_menu.active {
-
-        width: 100%;
-        top: 100%;
-        left: 0;
-
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 60vh;
-        font-size: 1.6rem;
-        background-color: pink;
-
-    }
-
-    .Navbar_logo {
-        padding-left: 55px;
-
-    }
-
-    .Phone_number {
-        display: none;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 30px;
-        left: 10px;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__item {
-        width: 80%;
-
-        margin: auto;
-
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-
-
-    .right-side-nav {
-        justify-content: end;
-        width: 100%;
-        padding-right: 10px;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: -1000%;
-        background-color: pink;
-        overflow-x: hidden;
-        padding-top: 60px;
-        display: block;
-    }
-
-    .sidenav.active {
-
-        left: 0;
-        opacity: 1;
-        transition: all 0.1s ease-in-out;
-        z-index: 99;
-
-    }
-
-    .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        position: relative;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-
-    .home-page {
-        background-attachment: initial;
-    }
-
-
-
-
-
-
-}
 
 
 
@@ -595,51 +421,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
 
 /* end of hero section */
 /* hero section media queries */
@@ -775,27 +556,8 @@ body {
     ;
 }
 
+/* cards media queries */
 
-@media screen and (max-width: 960px) {
-    .enjoy-free-time {
-        background-attachment: initial;
-    }
-
-    .Services {
-        border: none;
-    }
-
-    /* .card-whole {
-        margin-bottom: 50px;
-    } */
-
-    .card-css {
-        border: none;
-
-
-
-    }
-}
 
 /* Reviews Section */
 
@@ -991,5 +753,263 @@ a:hover {
 @media (max-width:991px) {
     .footer-menu {
         padding-left: 0
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /* media screen for navbar */
+
+
+
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+
+
+    .navbar__toggle .bar {
+        width: 35px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #0d6efd;
+    }
+
+
+    .Navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000%;
+
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+
+    }
+
+    .left-side-nav {
+
+        width: 400px;
+
+
+
+
+
+    }
+
+    .Navbar_logo {
+        width: fit-content;
+    }
+
+
+
+
+    .navbar__links {
+        text-align: center;
+
+
+
+
+        width: 90%;
+        display: table;
+    }
+
+
+    .Navbar_menu.active {
+
+        width: 100%;
+        top: 100%;
+        left: 0;
+
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+        background-color: pink;
+
+    }
+
+    .Navbar_logo {
+        padding-left: 55px;
+
+    }
+
+    .Phone_number {
+        display: none;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__item {
+        width: 80%;
+
+        margin: auto;
+
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+    .right-side-nav {
+        justify-content: end;
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: -1000%;
+        background-color: pink;
+        overflow-x: hidden;
+        padding-top: 60px;
+        display: block;
+    }
+
+    .sidenav.active {
+
+        left: 0;
+        opacity: 1;
+        transition: all 0.1s ease-in-out;
+        z-index: 99;
+
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        position: relative;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .home-page {
+        background-attachment: initial;
+    }
+
+    /* Cards media queries */
+    .enjoy-free-time {
+        background-attachment: initial;
+    }
+
+    .Services {
+        border: none;
+    }
+
+    /* .card-whole {
+        margin-bottom: 50px;
+    } */
+
+    .card-css {
+        border: none;
+
+
+
+    }
+
+    /* review section */
+    .review_section {
+        background-attachment: initial;
+    }
+
+    #reviews_cards {
+        gap: 30px;
+    }
+
+    #lastCard {
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+
+}
+
+
+/* key frames */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
     }
 }
