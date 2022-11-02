@@ -100,7 +100,7 @@ var squareFootageInput;
 // FORM EVENT LISTENERS
 
 form_1_next_btn.addEventListener("click", function () {
-    if (firstName.vale === '' || lastName.value === '' || emailAdress.value === '') {
+    if (firstName.value === '' || lastName.value === '' || emailAdress.value === '') {
         alert("You must complete all the input fields");
     }
     else {
